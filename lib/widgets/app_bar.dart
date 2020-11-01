@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
-import './menu_button.dart';
 import '../config/constants.dart';
+import 'button_widgets.dart';
 
 class CustomAppBar extends StatelessWidget {
   @override
@@ -29,6 +29,7 @@ class CustomAppBar extends StatelessWidget {
           ),
           MenuButton(Routes.home),
           MenuButton(Routes.map),
+          MenuButton(Routes.mods),
         ],
       ),
     );

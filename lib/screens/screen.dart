@@ -6,7 +6,7 @@ abstract class Screen extends StatelessWidget {
   final EdgeInsetsGeometry margin;
 
   Screen({
-    this.margin = const EdgeInsets.fromLTRB(20, 50, 20, 20),
+    this.margin = const EdgeInsets.only(left: 30, right: 30, bottom: 30),
   });
 
   @override
@@ -20,6 +20,7 @@ abstract class Screen extends StatelessWidget {
       ),
       child: Container(
         child: Column(
+          crossAxisAlignment: CrossAxisAlignment.start,
           children: [
             CustomAppBar(),
             Container(

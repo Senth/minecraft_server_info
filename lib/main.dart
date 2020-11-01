@@ -5,6 +5,7 @@ import 'screens/map_screen.dart';
 import 'config/constants.dart';
 import 'config/configure_nonweb.dart'
     if (dart.library.html) 'config/configure_web.dart';
+import 'screens/mods_screen.dart';
 
 void main() {
   configureApp();
@@ -26,7 +27,8 @@ class MyApp extends StatelessWidget {
       initialRoute: '/',
       routes: {
         Routes.home.uri: (context) => HomeScreen(),
-        Routes.map.uri: (context) => MapScreen()
+        Routes.map.uri: (context) => MapScreen(),
+        Routes.mods.uri: (context) => ModsScreen(),
       },
       pageRouteBuilder: <T>(RouteSettings settings, WidgetBuilder builder) {
         return PageRouteBuilder(
